@@ -1,0 +1,9 @@
+@(posts:List[models.Posta])
+
+@main("Posts") {
+    <ul>
+        @for(post<-posts){
+        <li>@post.title</li>
+        }
+    </ul>
+}
