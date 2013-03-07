@@ -1,9 +1,9 @@
-@(posts:List[models.Posta])
+@(posts:List[models.Post])
 
 @main("Posts") {
     <ul>
         @for(post<-posts){
-        <li>@post.title</li>
+        <li><a href="@routes.Posts.post(post.id)">@post.title</a></li>
         }
     </ul>
 }

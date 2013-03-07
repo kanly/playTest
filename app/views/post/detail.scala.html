@@ -1,0 +1,18 @@
+@(post:models.Post)
+
+@main("Detail") {
+    <table>
+        <tr>
+            <td>Title</td>
+            <td>@post.title</td>
+        </tr>
+        <tr>
+            <td>Body</td>
+            <td>@post.body</td>
+        </tr>
+        <tr>
+            <td>Id</td>
+            <td>@post.id</td>
+        </tr>
+    </table>
+}
